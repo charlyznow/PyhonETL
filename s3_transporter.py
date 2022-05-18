@@ -1,9 +1,7 @@
+import pandas as pd 
+import boto3 
+import json 
 
-def say_hello():
-    print("soy el file s3")
-
-
-
-
-if __name__ ==  "__main__":
-    print("Execution Started")
+with open ("connections.json", "r") as j:
+    login = json.load(j)
+    print(login)
